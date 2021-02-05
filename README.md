@@ -66,13 +66,13 @@ span {
 }
 ```
 
-### Use
+### Use (updated to use let for variables)
 ```js
-var postcss = require("postcss");
-var spiffing = require("postcss-spiffing");
-var fs = require("fs");
+let postcss = require("postcss");
+let spiffing = require("postcss-spiffing");
+let fs = require("fs");
 
-var css = fs.readFileSync("random.css");
+let css = fs.readFileSync("random.css");
 
 console.log(postcss(spiffing()).process(css).css);
 ```
